@@ -7,7 +7,7 @@ from streamlit_navigation_bar import st_navbar
 load_dotenv()
 page_names_to_funcs = {
     "Home Page": intro,
-    "Chatbot with Llama": chat_bot_llama,
+    "Chatbot": chat_bot_llama,
     "Image Generator": image_generator,
     # "DataFrame Demo": data_frame_demo
 }
