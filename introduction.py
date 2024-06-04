@@ -2,7 +2,6 @@ import streamlit as st
 
 def intro():
     st.write("# Welcome to Streamlit! 👋")
-    st.sidebar.success("Select an Application.")
 
     st.markdown(
         """
