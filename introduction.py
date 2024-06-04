@@ -1,8 +1,6 @@
 import streamlit as st
 
 def intro():
-    st.write("# Welcome to Streamlit! 👋")
-
     st.markdown(
         """
         # Generative AI Application Suite
