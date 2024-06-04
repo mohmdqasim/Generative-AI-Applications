@@ -11,5 +11,26 @@ page_names_to_funcs = {
     "Image Generator": image_generator,
     # "DataFrame Demo": data_frame_demo
 }
-page = st_navbar(list(page_names_to_funcs.keys()))
+styles = {
+    "nav": {
+        "background-color": "rgb(121, 158, 196)",
+    },
+    "div": {
+        "max-width": "32rem",
+    },
+    "span": {
+        "border-radius": "0.5rem",
+        "color": "rgb(49, 51, 63)",
+        "margin": "0 0.125rem",
+        "padding": "0.4375rem 0.625rem",
+    },
+    "active": {
+        "background-color": "rgba(255, 255, 255, 0.25)",
+    },
+    "hover": {
+        "background-color": "rgba(255, 255, 255, 0.35)",
+    },
+}
+
+page = st_navbar(list(page_names_to_funcs.keys()), styles=styles)
 page_names_to_funcs[page]()
